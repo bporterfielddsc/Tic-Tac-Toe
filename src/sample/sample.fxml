@@ -1,0 +1,47 @@
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+
+<?import javafx.scene.text.Text?>
+<?import java.net.URL?>
+<GridPane fx:controller="sample.Controller"
+          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+    <Button fx:id="Button1" GridPane.ColumnIndex="0" GridPane.RowIndex="0"
+            onAction="#ButtonAction"></Button><!-- first placement spot -->
+
+    <Button fx:id="Button2" GridPane.ColumnIndex="1" GridPane.RowIndex="0"
+            onAction="#ButtonAction"></Button><!-- second placement spot -->
+
+    <Button fx:id="Button3" GridPane.ColumnIndex="2" GridPane.RowIndex="0"
+            onAction="#ButtonAction"></Button><!-- third placement spot -->
+
+    <Button fx:id="Button4" GridPane.ColumnIndex="0" GridPane.RowIndex="1"
+            onAction="#ButtonAction"></Button><!-- fourth placement spot -->
+
+    <Button fx:id="Button5" GridPane.ColumnIndex="1" GridPane.RowIndex="1"
+            onAction="#ButtonAction"></Button><!-- fifth placement spot -->
+
+    <Button fx:id="Button6" GridPane.ColumnIndex="2" GridPane.RowIndex="1"
+            onAction="#ButtonAction"></Button><!-- sixth placement spot -->
+
+    <Button fx:id="Button7" GridPane.ColumnIndex="0" GridPane.RowIndex="2"
+            onAction="#ButtonAction"></Button><!-- seventh placement spot -->
+
+    <Button fx:id="Button8" GridPane.ColumnIndex="1" GridPane.RowIndex="2"
+            onAction="#ButtonAction"></Button><!-- eighth placement spot -->
+
+    <Button fx:id="Button9" GridPane.ColumnIndex="2" GridPane.RowIndex="2"
+            onAction="#ButtonAction"></Button><!-- ninth placement spot -->
+
+    <Button fx:id="playerButton" text="P1" GridPane.ColumnIndex="0" GridPane.RowIndex="4"
+            GridPane.columnSpan="2"></Button><!-- tells what player's turn it is -->
+
+    <Button fx:id="resetButton" text="reset" GridPane.columnIndex="2" GridPane.RowIndex="4"
+            onAction="#resetActionButton"></Button><!-- use to reset -->
+
+    <Text fx:id="timerButton" text="15" GridPane.columnIndex="4" GridPane.RowIndex="4"
+    ></Text><!-- keeps track of time-->
+    <stylesheets>
+        <URL value="@Login.css"/>
+    </stylesheets><!-- tells what style sheet (Login.css) to use -->
+</GridPane>
